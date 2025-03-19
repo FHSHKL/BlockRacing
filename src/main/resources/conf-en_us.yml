@@ -1,0 +1,61 @@
+blockSet: "default-zh"
+blockAmount: 10
+configRuleMap:
+  Seize: true
+  Swift: false
+  TeamTp: true
+  Give: true
+  Racing: false
+scoreboardBlockNum: 3
+scoreboardEnemyVisiablity: true
+configSkillMap:
+  Locate:
+    icon: "GOLDEN_APPLE"
+    name: "Locate"
+    cost: 25
+    maxNum: 999999
+    curNum: 0
+  TeamChest:
+    icon: "EGG"
+    name: "TeamChest"
+    cost: 15
+    maxNum: 18
+    curNum: 3
+  RollBlock:
+    icon: "ENDER_EYE"
+    name: "RollBlock"
+    cost: 5
+    maxNum: 999999
+    curNum: 0
+  TeamWaypoint:
+    icon: "ENDER_CHEST"
+    name: "TeamWaypoint"
+    cost: 18
+    maxNum: 999999
+    curNum: 3
+  RandomTp:
+    icon: "HOPPER"
+    name: "RandomTp"
+    cost: 15
+    maxNum: 999999
+    curNum: 5
+  AddBlock:
+    icon: "CHEST"
+    name: "AddBlock"
+    cost: 25
+    maxNum: 18
+    curNum: 3
+  ReBlock:
+    icon: "FILLED_MAP"
+    name: "ReBlock"
+    cost: 20
+    maxNum: 18
+    curNum: 3
+  RePlace:
+    icon: "ENDER_PEARL"
+    name: "RePlace"
+    cost: 20
+    maxNum: 999999
+    curNum: 0
+configVersion: "4.0"
+lang: "zh_cn"

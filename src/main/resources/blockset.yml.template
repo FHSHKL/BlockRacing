@@ -1,0 +1,7 @@
+name: Easy/Medium/Hard/End/DyedBlocks
+point: 2/3/5/7/4
+enabled: true
+weight: 15/12/9/6/3
+color: DARK_GREEN/DARK_AQUA/DARK_RED/DARK_PURPLE/GOLD
+icon: RAW_IRON_BLOCK/RAW_GOLD_BLOCK/DIAMOND_BLOCK/END_PORTAL_FRAME/RED_DYE
+blocks:

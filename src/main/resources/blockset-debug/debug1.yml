@@ -1,0 +1,11 @@
+name: debug1
+point: 9999
+enabled: true
+weight: 9999
+color: RED
+blocks:
+- DIRT
+- COBBLESTONE
+- COBBLESTONE_SLAB
+- COBBLESTONE_STAIRS
+- COBBLESTONE_WALL

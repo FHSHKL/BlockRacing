@@ -1,32 +1,29 @@
 name: BlockRacing
-version: 3.3
-main: top.lqsnow.blockracing.Main
+version: 4.0
+main: cf.fhshkl.blockracing.Main
 api-version: 1.21
 authors: [ LQ_Snow, xiaojiuwo233, FHSHKL ]
-description: The first team to collect the required blocks wins
+description: Collect target blocks to win
 commands:
-  tp:
-    usage: "/tp <Teammate>"
-    description: "TP to teammate."
-  locatestructure:
-    usage: "/locate <Structure>"
-    description: "Locate structure."
-  locatebiome:
-    usage: "/locate <Biome>"
-    description: "Locate biome."
-  restartgame:
-    usage: "/restartgame"
-    description: "Restart the game."
-  debug:
-    usage: "/debug"
-    description: "Debug."
-    permission: op
+  skill:
+    usage: "/skill <skillName>"
+    description: "try buy skill"
+  chest:
+    usage: "/chest <chestId>"
+    description: "open team chest"
+  waypoint:
+    usage: "/waypoint [rm|use] <waypointId>"
+    description: "rm/use waypoint"
+  locate:
+    usage: "/locatestruct [structure|biome] <structure|biome>"
+    description: "locate structure/biome"
   menu:
     usage: "/menu"
-    description: "Open the menu."
-  waypoint:
-    usage: "/waypoint"
-    description: "Run waypoint commands."
-  block:
-    usage: "/block <team> <number>"
-    description: "Query block."
+    description: "open menu"
+  team:
+    usage: "/team"
+    description: "open join team menu"
+  tp:
+    usage: "/tp <playerName>"
+    description: "teleport between teammate"
+

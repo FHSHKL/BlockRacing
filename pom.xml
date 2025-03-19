@@ -4,13 +4,14 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>lq.snow</groupId>
+    <groupId>cf.fhshkl</groupId>
     <artifactId>BlockRacing</artifactId>
-    <version>3.3</version>
+    <version>4.0</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <jackson.version>2.18.2</jackson.version>
     </properties>
 
     <repositories>
@@ -34,18 +35,32 @@
         <dependency>
             <groupId>com.github.kangarko</groupId>
             <artifactId>Foundation</artifactId>
-            <version>6.9.17</version>
+            <version>6.9.18</version>
         </dependency>
-        <dependency>
+        <!--dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
-        </dependency>
-
+        </dependency-->
+        <!--dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>2.4</version>
+        </dependency-->
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>24.1.0</version>
+        </dependency>
+        <dependency> 
+            <groupId>com.fasterxml.jackson.core</groupId> 
+            <artifactId>jackson-core</artifactId> 
+            <version>${jackson.version}</version> 
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -76,6 +91,7 @@
                      ONLY ADD THE LIBRARIES HERE YOU WANT TO BE INCLUDED IN YOUR PLUGIN.JAR
                      -->
                             <include>com.github.kangarko:Foundation*</include>
+                            <include>com.fasterxml.jackson*</include>
                         </includes>
                     </artifactSet>
                     <relocations>
@@ -83,6 +99,7 @@
                         prevent interference. -->
                         <relocation>
                             <pattern>org.mineacademy.fo</pattern>
+                            <pattern>com.fasterxml.jackson</pattern>
                             <!--shadedPattern>your.plugin.main.package.lib</shadedPattern-->
                         </relocation>
                     </relocations>
